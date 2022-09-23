@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #008080, blue);
+}
+
+.calculator{ 
+  background: black;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  display: grid; 
+  grid-template: repeat(6,1fr) / repeat(3,1fr);
+  padding:2px;
+  grid-gap: 2px;
+}
+
+.display{
+  color: orange;
+  font-weight: bold;
+  font-size: 1.2rem ;
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  grid-column: span 3;
+  padding: 10px;
+  align-items: center;
+}
+
+.operators{
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+.operators>button{
+  border: None ;
+  background: teal ;
+  font-weight: bold ;
+  font-size: 1.2rem ;
+  color: black ;
+}
+.operators>button:hover{
+  background: #006565;
+}
+.calculator>button{ 
+  background: black;
+  color: #dddddd; 
+  font-weight: bold;
+  font-size: 1.1rem;
+  border:None;
+}
+.calculator>button:hover{ 
+  background: #202020;
+}
+
